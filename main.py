@@ -4,9 +4,9 @@ def encrypt():
     key = 5
     encrypt = ' '
     for i in message:
-        position=alphabet.find(i)
-        newposition=(position+5)%26
-        encrypt+=alphabet[newposition]
+        position = alphabet.find(i)
+        newposition = (position+5) % 26
+        encrypt += alphabet[newposition]
 
     print(encrypt)
 
@@ -14,13 +14,13 @@ def decrypt():
     message = input("Please Enter your message: ")
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     key = 5
-    encrypt = ' '
+    decrypt = ' '
     for i in message:
-        position=alphabet.find(i)
-        newposition=(position-5)%26
-        encrypt+=alphabet[newposition]
+        position = alphabet.find(i)
+        newposition = (position-5) % 26
+        decrypt += alphabet[newposition]
 
-    print(encrypt)
+    print(decrypt)
 
 
 def main():
